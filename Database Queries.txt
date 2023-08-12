@@ -1,0 +1,27 @@
+---- Database Queries for ATM Interface ----
+
+1 - Create database with name ATMInterface in mysql
+
+create database ATMInterface;
+
+2 - Select the database you just created
+
+use ATMInterface;
+
+3 - Create our first Table in the selected database with name login
+
+create table login(Form_No varchar(20),User_Id varchar(20),Password varchar(20),Name varchar(30),Father_Name varchar(30),Type varchar(30));
+
+4 - Create the balance table to store balance information
+
+create table balance(User_Id varchar(30),Password varchar(20),Balance varchar(50));
+
+5 - Now create bank table to store transactions related information 
+
+create table bank(Password varchar(20),Date varchar(40),Type varchar(20),Amount varchar(40));
+
+6 - for checking data within the table you can use
+
+select * from login;
+select * from bank;
+select * from balance;
